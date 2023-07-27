@@ -15,9 +15,11 @@ const gameWorld = {
 
   /**
    * Remove a player from the game world
-   * @param {Object} player - The player object
+   * @param {string} name - The player name
    */
-  removePlayer: function (player) { },
+  removePlayer: function (name) {
+    this.players = this.players.filter(player => player.name !== name);
+  },
 
   /**
    * Add a new enemy to the game world
@@ -27,9 +29,9 @@ const gameWorld = {
 
   /**
    * Remove an enemy from the game world
-   * @param {Object} enemy - The enemy object
+   * @param {string} name - The enemy name
    */
-  removeEnemy: function (enemy) { },
+  removeEnemy: function (name) { },
 
   /**
    * Add a new item to the game world
@@ -39,9 +41,9 @@ const gameWorld = {
 
   /**
    * Remove an item from the game world
-   * @param {Object} item - The item object
+   * @param {string} name - The item name
    */
-  removeItem: function (item) { },
+  removeItem: function (name) { },
 
   /**
    * Add a new NPC to the game world
@@ -51,9 +53,9 @@ const gameWorld = {
 
   /**
    * Remove an NPC from the game world
-   * @param {Object} npc - The NPC object
+   * @param {name} npc - The NPC name
    */
-  removeNPC: function (npc) { },
+  removeNPC: function (name) { },
 
   /**
    * Check for encounters between a player and enemies
