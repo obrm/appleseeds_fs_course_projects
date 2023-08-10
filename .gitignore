@@ -5,3 +5,6 @@ index.js
 *.gsheet
 *.tmp
 */design
+solution/
+.vscode
+copy mulitple inputs.pdf

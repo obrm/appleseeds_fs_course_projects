@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Image Slider</title>
+  <style>
+    .container {
+      width: 300px;
+      margin: 300px auto 0;
+    }
+
+    #slider {
+      width: 100%;
+      overflow: hidden;
+    }
+
+    #slider img {
+      border-radius: 5px;
+      width: 100%;
+      display: none;
+    }
+
+    #slider img.active {
+      display: block;
+    }
+
+    .buttons {
+      width: 150px;
+      margin: 10px auto;
+    }
+
+    button {
+      padding: 10px 15px;
+      background-color: #6363d4;
+      border: none;
+      color: #fff;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: all 0.3s ease-in-out;
+    }
+
+    button:hover {
+      opacity: 0.7;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div id="slider">
+      <img src="./images/image1.jpg" class="active">
+      <img src="./images/image2.jpg">
+      <img src="./images/image3.jpg">
+      <img src="./images/image4.jpg">
+      <img src="./images/image5.jpg">
+    </div>
+    <div class="buttons">
+      <button onclick="moveSlide(-1)">Previous</button>
+      <button onclick="moveSlide(1)">Next</button>
+    </div>
+  </div>
+</body>
+
+</html>
