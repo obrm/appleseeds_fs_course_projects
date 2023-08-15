@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Navbar Event Delegation</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      background-color: #f4f4f4;
+    }
+
+    .navbar {
+      background-color: #ffffff;
+      border-bottom: 1px solid #e7e7e7;
+      box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+    }
+
+    .navbar ul {
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+
+    .navbar ul li {
+      padding: 20px;
+    }
+
+    .navbar ul li a {
+      text-decoration: none;
+      color: #333;
+      font-size: 18px;
+      font-weight: bold;
+      padding: 14px 20px;
+      transition: color 0.3s, background-color 0.3s;
+    }
+
+    .navbar ul li a:hover {
+      color: #ffffff;
+      background-color: #007bff;
+    }
+
+    .message {
+      display: none;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      padding: 20px;
+      background-color: #fff;
+      border: 1px solid #ccc;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+      font-size: 20px;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="navbar">
+    <ul id="navList">
+      <li><a href="#" data-link="Link 1">Link 1</a></li>
+      <li><a href="#" data-link="Link 2">Link 2</a></li>
+      <li><a href="#" data-link="Link 3">Link 3</a></li>
+    </ul>
+  </div>
+  <div class="message" id="message"></div>
+</body>
+
+</html>
