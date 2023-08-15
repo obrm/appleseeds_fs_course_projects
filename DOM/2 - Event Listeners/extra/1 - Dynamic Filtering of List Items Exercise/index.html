@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dynamic Filtering of List Items</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #fafafa;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      width: 60%;
+      margin: 40px auto;
+      background-color: #ffffff;
+      padding: 30px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+    }
+
+    .categories {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 0;
+      cursor: pointer;
+    }
+
+    .category {
+      flex: 1;
+      padding: 10px;
+      border: 2px solid #008CBA;
+      color: #008CBA;
+      font-weight: bold;
+      text-align: center;
+      margin: 0 10px;
+      border-radius: 5px;
+      transition: all 0.3s;
+    }
+
+    .category:hover {
+      background-color: #008CBA;
+      color: #ffffff;
+    }
+
+    .items {
+      margin-top: 20px;
+    }
+
+    .item {
+      margin: 10px 0;
+      padding: 10px;
+      background-color: #f0f0f0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    .item:hover {
+      background-color: #e0e0e0;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="categories" id="categories">
+      <div class="category" data-category="fruits">Fruits</div>
+      <div class="category" data-category="vegetables">Vegetables</div>
+      <div class="category" data-category="dairy">Dairy</div>
+    </div>
+    <div class="items" id="items"></div>
+  </div>
+</body>
+
+</html>
