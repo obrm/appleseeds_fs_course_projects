@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f3f4f6;
+      padding: 20px;
+    }
+
+    .filter-container {
+      margin-bottom: 20px;
+    }
+
+    .filter-input {
+      width: 100%;
+      padding: 10px;
+      box-sizing: border-box;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+    }
+
+    .item-list {
+      list-style: none;
+      padding: 0;
+    }
+
+    .item {
+      padding: 10px;
+      background-color: #eaeaea;
+      margin-bottom: 5px;
+      border: 1px solid #ccc;
+    }
+  </style>
+  <title>Dynamic Content Filter</title>
+</head>
+
+<body>
+  <div class="filter-container">
+    <input type="text" id="filterInput" class="filter-input" placeholder="Search items...">
+  </div>
+  <ul id="itemList" class="item-list">
+    <li class="item">Apple</li>
+    <li class="item">Banana</li>
+    <li class="item">Cherry</li>
+    <li class="item">Date</li>
+    <li class="item">Eggplant</li>
+  </ul>
+</body>
+
+</html>
