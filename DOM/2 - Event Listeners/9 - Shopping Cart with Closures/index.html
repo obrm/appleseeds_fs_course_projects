@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping Cart</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      background-color: #f4f4f4;
+    }
+
+    .products {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+
+    .product {
+      margin: 20px;
+      padding: 20px;
+      border: 1px solid #ddd;
+      background-color: #ffffff;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s;
+    }
+
+    .product:hover {
+      transform: scale(1.05);
+    }
+
+    .product button {
+      padding: 10px;
+      color: #fff;
+      background-color: #007bff;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .product button:hover {
+      background-color: #0056b3;
+    }
+
+    .cart {
+      margin: 20px;
+      padding: 20px;
+      background-color: #ffffff;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .cart-item {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px;
+      border-bottom: 1px solid #ddd;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="products">
+    <div class="product" data-id="1">
+      <h3>Product 1</h3>
+      <button>Add to Cart</button>
+    </div>
+    <div class="product" data-id="2">
+      <h3>Product 2</h3>
+      <button>Add to Cart</button>
+    </div>
+  </div>
+  <div class="cart">
+    <h2>Shopping Cart</h2>
+    <div class="cart-items"></div>
+  </div>
+</body>
+
+</html>

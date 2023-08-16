@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Colorful Path Drawing App</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #e6f7ff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    #drawingArea {
+      border: 3px solid #99c2ff;
+      background-color: #f0f8ff;
+      border-radius: 5px;
+      cursor: crosshair;
+    }
+
+    .container {
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      background-color: #ffffff;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <canvas id="drawingArea" width="600" height="400"></canvas>
+  </div>
+</body>
+
+</html>
