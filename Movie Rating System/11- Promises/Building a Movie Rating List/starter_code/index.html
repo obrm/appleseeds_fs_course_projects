@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Movie Rating</title>
+</head>
+<body>
+    <div class="container">
+        <div class="flex-container nav-bar">
+            <div class="flex-container nav-bar-container">
+                <div  class="flex-container logo" >
+                    <img src="/images/logo.png"> 
+                    <h1>MOVIE RATING</h1>
+                </div>
+            <div  class="flex-container menu-icon" >
+                <img src="/images/menu.svg"> 
+                <h3 class="normal-heading">Menu</h3>
+            </div>
+            <div class="flex-container search-bar" >
+                <img id="search-icon" src="./images/search.svg"> 
+                <form action="/search" method="get">
+                    <input type="text" name="q" placeholder="Search by name">
+                </form>
+                <div class="flex-container filter" >
+                    <h3 class="normal-heading">Filter</h3>
+                    <img id="filter-icon" src="./images/filter.svg">
+                </div>
+            </div>
+            <div class=" flex-container user-info">
+                <img src="./images/tag.svg"> 
+                <h3 class="normal-heading">Watchlist</h3>
+                <div class="vl"></div>
+                <img src="./images/user.svg">
+                <h3 class="normal-heading">User</h3>
+            </div>
+            <div class="flex-container language">
+                <img src="./images/down.svg">
+                <div class="vl"></div>
+                <h3 class="normal-heading">EN</h3>
+                <img src="./images/down.svg">
+            </div>
+            </div>
+            </div>
+        
+
+
+        <div class="main">
+      <!-- guide buttons and the main header -->
+      <div class="guide">
+        <ul class="flex-container guide-menu">
+            <li class="normal-heading"> <a>Watch Guide</a></li>
+            <li class="normal-heading"> <a>Watch Guide</a></li>
+            <li class="normal-heading"> <a>Watch Guide</a></li>
+            <li class="normal-heading"> <a>Watch Guide</a></li>   
+        </ul>
+        <h1 class="normal-heading">Most Popular Movies</h1>
+        <h3 class="normal-heading-2">As determined by our Users</h3>
+      </div>
+              
+            
+                <!-- now the movies page -->
+                <div class="movies">
+                    <!-- first the sort bar  -->
+                    <div class="flex-container sort-bar">
+                        <p class="normal-heading-2"></p>
+                        <div class="flex-container sort">
+                            <img src="./images/sort.svg">
+                            <p class="normal-heading-2">Sort by</p>
+                            <select>
+                                <option value="rating">Rating</option>
+                                <option value="date">Release Date</option>
+                                <option value="genre">Genre</option>
+                              </select>
+                            <div class="flex-container sort-grid">
+                                <img src="./images/list.svg"> 
+                                <img src="./images/grid.svg">
+                            </div>
+                        </div>
+                    </div>
+
+                <!-- now the moives -->
+                <div class="movies-list"> </div>
+
+                </div>
+        </div>
+        <div class="footer flex-container">
+            <ul class="flex-container icons">
+                <li><a><img src="./images/tabler-icon-brand-tiktok.svg"></a></li>
+                <li><a><img src="./images/tabler-icon-brand-youtube.svg"></a></li>
+                <li><a><img src="./images/tabler-icon-brand-facebook.svg"></a></li>
+                <li><a><img src="./images/tabler-icon-brand-instagram.svg"></a></li>
+            </ul>
+            <ul class="flex-container icons normal-heading">
+                <li><a>Get the IMDB App</a></li>
+                <li><a>Help</a></li>
+                <li><a>Site Index</a></li>
+                <li><a>IMDBPro</a></li>
+                <li><a>Box Office Mojo</a></li>
+                <li><a>IMDB Developer</a></li>
+            </ul>
+            <ul class="flex-container icons normal-heading">
+                <li><a>Press Room</a></li>
+                <li><a>Advertising</a></li>
+                <li><a>Jobs</a></li>
+                <li><a>Conditions of Use</a></li>
+                <li><a>Privacy Policy</a></li>
+                <li><a>Your Ads privacy Choices</a></li>
+            </ul>
+
+        </div>
+
+
+    </div>
+    <script src="./script.js"></script>
+    
+</body>
+</html>
