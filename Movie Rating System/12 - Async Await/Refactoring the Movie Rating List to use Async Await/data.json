@@ -1,0 +1,47 @@
+{
+	"dates": {
+		"maximum": "2023-08-25",
+		"minimum": "2023-07-08"
+	},
+	"page": 1,
+	"results": [
+    {
+      "adult": false,
+      "backdrop_path": "/nHf61UzkfFno5X1ofIhugCPus2R.jpg",
+      "genre_ids": [
+        35,
+        12,
+        14
+      ],
+      "id": 346698,
+      "original_language": "en",
+      "original_title": "Barbie",
+      "overview": "Barbie and Ken are having the time of their lives in the colorful and seemingly perfect world of Barbie Land. However, when they get a chance to go to the real world, they soon discover the joys and perils of living among humans.",
+      "popularity": 1867.203,
+      "poster_path": "/iuFNMS8U5cb6xfzi51Dbkovj7vM.jpg",
+      "release_date": "2023-07-19",
+      "title": "Barbie",
+      "video": false,
+      "vote_average": 7.4,
+      "vote_count": 3175
+    },
+		{
+			"adult": false,
+			"backdrop_path": "/rRcNmiH55Tz0ugUsDUGmj8Bsa4V.jpg",
+			"genre_ids": [35, 10749],
+			"id": 884605,
+			"original_language": "en",
+			"original_title": "No Hard Feelings",
+			"overview": "On the brink of losing her childhood home, Maddie discovers an intriguing job listing: wealthy helicopter parents looking for someone to “date” their introverted 19-year-old son, Percy, before he leaves for college. To her surprise, Maddie soon discovers the awkward Percy is no sure thing.",
+			"popularity": 1638.672,
+			"poster_path": "/4K7gQjD19CDEPd7A9KZwr2D9Nco.jpg",
+			"release_date": "2023-06-15",
+			"title": "No Hard Feelings",
+			"video": false,
+			"vote_average": 7.1,
+			"vote_count": 690
+		}
+	],
+	"total_pages": 73,
+	"total_results": 1448
+}
