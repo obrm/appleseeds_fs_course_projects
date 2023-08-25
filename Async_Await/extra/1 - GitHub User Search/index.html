@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Github Users</title>
+</head>
+<style>
+  @import url('https://fonts.googleapis.com/css?family=Roboto');
+  @import url('https://fonts.googleapis.com/css2?family=Arimo:wght@400;700&display=swap');
+
+  /* Global Styles */
+  :root {
+    --primary-color: #dc3545;
+    --dark-color: #24292e;
+    --light-color: #f4f4f4;
+    --dark-gray: #333;
+    --mid-gray: #666;
+    --light-gray: #ccc;
+    --form-gray: #888;
+    --danger-color: #f06573;
+    --success-color: #28a745;
+    --warning-color: #eaf369;
+    --info-color: #3d9eee;
+    --white: #fff;
+    --green: #115d23;
+  }
+
+  html {
+    /* The default font size of the browser is 16px, so if we want 1rem to be equal to 10px, we divide 10px by 16px = 62.5% */
+    font-size: 62.5%;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+
+  body {
+    box-sizing: border-box;
+    font-family: 'Roboto', 'Arimo', sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.6;
+    background-color: var(--white);
+    color: var(--dark-gray);
+  }
+
+  a {
+    color: var(--info-color);
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: var(--mid-gray);
+  }
+
+  ul {
+    list-style: none;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  span {
+    font-family: 'Roboto', 'Arimo', sans-serif;
+  }
+
+  /* Utilities */
+  .container {
+    width: 110rem;
+    max-width: 110rem;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 3.2rem;
+  }
+
+  .navbar {
+    margin-bottom: 1.6rem;
+    padding: 1rem 3rem;
+    width: 100%;
+    z-index: 1;
+  }
+
+  .navbar .container {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .card {
+    border: 1px dotted var(--light-gray);
+    border-radius: 0.5rem;
+    margin: 1rem 0;
+    min-width: 6rem;
+    padding: 1.6rem;
+  }
+
+  .grid-2 {
+    grid-gap: 1rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .all-center {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    text-align: center;
+    width: 100%;
+  }
+
+  .round-img {
+    border-radius: 50%;
+    width: 15rem;
+  }
+
+  .btn {
+    background: var(--light-color);
+    border: none;
+    border-radius: 0.5rem;
+    color: #333;
+    color: var(--dark-gray);
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1.6rem;
+    margin-right: 1rem;
+    outline: none;
+    padding: 0.6rem 2rem;
+    transition: opacity .2s ease-in;
+  }
+
+  .badge {
+    display: inline-block;
+    font-size: 1.4rem;
+    margin: 0.5rem;
+    padding: 0.3rem 1rem;
+    text-align: center;
+  }
+
+  .alert,
+  .badge {
+    background: var(--light-color);
+    border-radius: 0.5rem;
+    color: var(--dark-gray);
+  }
+
+  .alert-success,
+  .badge-success,
+  .bg-success,
+  .btn-success {
+    background: var(--success-color);
+    color: var(--white);
+  }
+
+  .alert-dark,
+  .badge-dark,
+  .bg-dark,
+  .btn-dark {
+    background: var(--dark-color);
+    color: var(--white);
+  }
+
+  .alert-info,
+  .badge-info,
+  .bg-info,
+  .btn-info {
+    background: var(--info-color);
+    color: #fff;
+  }
+
+  .badge-light,
+  .bg-light {
+    border: 1px solid var(--light-gray);
+  }
+
+  .search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  #searchField:focus {
+    outline: none;
+    box-shadow: none;
+  }
+
+
+  .search-container input[type="text"] {
+    padding: 0.5rem;
+    border: 1px solid var(--light-gray);
+    border-radius: 0.5rem;
+    width: 40rem;
+  }
+
+  .search-container button {
+    padding: 0.5rem;
+    background: var(--success-color);
+    border: none;
+    border-radius: 0.5rem;
+    color: var(--white);
+    cursor: pointer;
+    margin-left: 0.5rem;
+  }
+</style>
+
+<body>
+  <nav class="navbar bg-dark">
+    <div class="container">
+      <div class="search-container">
+        <input type="text" id="searchField" placeholder="Search GitHub users..." />
+        <button id="searchButton">Search</button>
+      </div>
+    </div>
+  </nav>
+  <div class="container" id="user-details">
+  </div>
+</body>
+
+</html>

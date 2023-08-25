@@ -6,5 +6,6 @@ index.js
 *.tmp
 */design
 solution/
+ui_images/
 .vscode
 copy mulitple inputs.pdf
